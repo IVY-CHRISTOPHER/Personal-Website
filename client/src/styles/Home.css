@@ -1,0 +1,140 @@
+html{scroll-behavior:smooth}
+
+.container {
+    margin-top: 5rem;
+}
+
+.welcome {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 50%;
+}
+
+div h1 {
+text-align: center;
+align-items: center;
+}
+
+.info {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.info a {
+    text-decoration: none;
+}
+
+.info img {
+    margin-bottom: 3rem;
+}
+
+.About{
+    text-align: center;
+    line-height: 50px;
+    font-size: large;
+    background-color: rgb(166, 162, 162);
+    border: black solid 1px;
+}
+
+.Projects {
+    text-align: center;
+    line-height: 50px;
+}
+
+.Projects p {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: normal;
+    margin-bottom: 100px;
+    font-size: large;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.Certifications {
+    background-color: rgb(166, 162, 162);
+    border: black solid 1px;
+    padding: 5px;
+}
+
+.Certifications img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-top: 15px;
+    
+}
+
+.Certifications a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    margin-top: 15px;
+}
+
+.CertificationsOnHover {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.Contact {
+    text-align: center;
+    line-height: 50px;
+    font-size: large;
+}
+
+.Contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.ProjectsOnHover {
+    padding: 5px;
+}
+
+.MyProjects {
+    background-color: rgb(166, 162, 162);
+    border: black solid 1px;
+}
+
+.Python {
+    background-color: rgb(166, 162, 162);
+    border: black solid 1px;
+}
+
+.Python a {
+    text-decoration: none;
+    font-size: large;
+    color: black;
+}
+
+.Mern a {
+    text-decoration: none;
+    font-size: large;
+    color: black;
+}
+
+.Java a {
+    text-decoration: none;
+    font-size: large;
+    color: black;
+}
+
+#Github {
+    color: rgb(30, 136, 171);
+}
