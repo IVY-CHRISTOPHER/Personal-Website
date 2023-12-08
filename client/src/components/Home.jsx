@@ -78,7 +78,7 @@ const Home = () => {
                     Where?  :   Springdale, AR <br/>
                     When?   :   I graduated the Coding Dojo in 08/23 but my love for coding dates back many of years<br/>
                     Why?    :   To eventually make a video game myself and many others will love and enjoy<br/>
-                    How?    :   I will accieve this dream by working hard and everyday, coding, learning, and testing myself! <br/>
+                    How?    :   I will achieve this dream by working hard and everyday, coding, learning, and testing myself! <br/>
                 </p>
             </div>
             <div className="Contact" id="Contact">
