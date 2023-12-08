@@ -31,8 +31,14 @@ const Home = () => {
                 <div className="Java" id="Java">
                     <h2>Java - Not Deployed</h2>
                     <h3>GitHub Links</h3>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/CodingDojoJAVAProjects/tree/main/SaveTravels">Save Travels</a> <br/>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/CodingDojoJAVAProjects/tree/main/dojosandninjas">Dojos and Ninjas</a>
+                    <ul>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/CodingDojoJAVAProjects/tree/main/SaveTravels">Save Travels</a>
+                        </li>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/CodingDojoJAVAProjects/tree/main/dojosandninjas">Dojos and Ninjas</a>
+                        </li>
+                    </ul>
                 </div>
 
                 <div className="Python" id="Python">
@@ -105,9 +111,17 @@ const Home = () => {
                     <a href="http://3.133.98.214/home"><img style={{width: "20%", border: "solid black 5px"}} onMouseOver={(e) => {e.target.className="ProjectsOnHover"}} onMouseOut={(e) => {e.target.className=""}} src={ColorMaster} alt="Color Master Home Image" /> </a>
                     <p>The is an application which allows guests to collect a random generated list of colors and move them around. This also allows a user that is logged in to create and save favorite colors.</p>
                     <h3>GitHub Links</h3>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/Personal-Projects/tree/main/RainbowRoulette/client">Random Operator Generator For Rainbow Six Siege</a> <br/>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/projects">My Solo Project For The Coding Dojo - Social Media Site</a> <br/>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/mern-july">All Of My Mern Experience</a>
+                    <ul>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/Personal-Projects/tree/main/RainbowRoulette/client">Random Operator Generator For Rainbow Six Siege</a> <br/>
+                        </li>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/projects">My Solo Project For The Coding Dojo - Social Media Site</a> <br/>
+                        </li>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/mern-july">All Of My Mern Experience</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div id="About" className="About">
