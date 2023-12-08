@@ -109,7 +109,7 @@ const Home = () => {
                     <h2>Mern - Deployed</h2>
                     <h3>Color Master</h3>
                     <a href="http://3.133.98.214/home"><img style={{width: "20%", border: "solid black 5px"}} onMouseOver={(e) => {e.target.className="ProjectsOnHover"}} onMouseOut={(e) => {e.target.className=""}} src={ColorMaster} alt="Color Master Home Image" /> </a>
-                    <p>The is an application which allows guests to collect a random generated list of colors and move them around. This also allows a user that is logged in to create and save favorite colors.</p>
+                    <p>Color Master is an application which allows guests to collect a random generated list of colors and move them around. This also allows a user that is logged in to create and save favorite colors.</p>
                     <h3>GitHub Links</h3>
                     <ul>
                         <li>
