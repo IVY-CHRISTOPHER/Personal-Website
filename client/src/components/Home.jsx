@@ -90,7 +90,7 @@ const Home = () => {
             </div>
             <div className="Certifications" id="Certifications">
                 <h1>Coding Dojo Certificate</h1>
-                <a href="https://app.diplomasafe.com/en-US/diploma/da9e865061acdcb92e1957c3eb54a7310c694e7d4" ><img style={{width: "15rem", border: "solid black 5px"}} onMouseOver={(e) => {e.target.className="CertificationsOnHover"}} onMouseOut={(e) => {e.target.className="Certifications"}} src={Certificate} alt="Coding Dojo Certificate" /> </a> 
+                <a href="https://app.diplomasafe.com/en-US/diploma/da9e865061acdcb92e1957c3eb54a7310c694e7d4" ><img style={{width: "15rem", border: "solid black 5px"}} onMouseOver={(e) => {e.target.className="CertificationsOnHover"}} onMouseOut={(e) => {e.target.className=""}} src={Certificate} alt="Coding Dojo Certificate" /> </a> 
             </div>
             <div className="attributions">
                 <a href="https://www.flaticon.com/free-icons/hello" title="hello icons">Hello icons created by Kalashnyk - Flaticon</a>
