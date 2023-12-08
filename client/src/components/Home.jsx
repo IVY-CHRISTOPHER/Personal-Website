@@ -18,7 +18,7 @@ const Home = () => {
                 </div>
                 <p>
                     Im <strong>Chris</strong>, Full-Stack Web Dev, Aspiring C# game dev, Animal Lover, Hard Worker, and Late night Coffee Sipper!
-                    Basically i'm the perfect candidate for your role! </p>
+                    Basically I'm the perfect candidate for your role! </p>
 
                 <p>A few key web development languages in which I am proficient include <strong><a href="#Java" style={{ color: "Red" }}>Java</a></strong>, <strong><a href="#Python" style={{ color: "#c29115" }}>Python</a></strong>, 
                     and <strong><a href="#Mern" style={{ color: "blue" }}>MERN</a></strong>. 
