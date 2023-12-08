@@ -3,6 +3,7 @@ import React, {useState} from "react";
 import wave from "../assets/wave.png"
 import Certificate from "../assets/Certificate.jpg"
 import ColorMaster from "../assets/Projects/Javascript/ColorMasters.jpg"
+import Selfi from "../assets/Selfi.jpg"
 import "../styles/Home.css"
 
 const Home = () => {
@@ -11,8 +12,7 @@ const Home = () => {
         <div className="container">
             <h1 className="welcome" id="Home">Full-Stack Web Dev / Aspiring Game Dev</h1>
             <div className="info">
-                {/* Add a headshot here */}
-                <img src="#" alt="Headshot" />
+                <img style={{width: "25%", borderRadius: "50%", border: "solid black"}} src={Selfi} alt="Headshot" />
                 <div>
                     <h1>Hi! <img src={wave} alt="Wave" style={{width: "10%", marginBottom: "1px"}}/></h1> 
                 </div>
