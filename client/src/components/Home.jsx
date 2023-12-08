@@ -38,25 +38,65 @@ const Home = () => {
                 <div className="Python" id="Python">
                     <h2>Python - Not Deployed</h2>
                     <h3>GitHub Links</h3>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask/flask_projects/Dojo%20Survey">Dojo Survey</a> <br/>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask/flask_projects/PLayground">Playground Assignment</a> <br/>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask/flask_projects/W3L3_form">Creating a Form</a> <br/>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask/flask_projects/html%20table">Creating a Table with Flask</a> <br/>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask/flask_projects/project_counter">Counter Assignment</a> <br/>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask/fundamentals/hello_flask">Hello Flask</a> <br/>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask_mysql/crud/Books">Books Assignment</a> <br/>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask_mysql/crud/Coding%20Dojo%20Wall">Dojo Wall</a> <br/>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask_mysql/crud/Cookie_Orders">Cookie Orders</a> <br/>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask_mysql/crud/Dojos_and_Ninjas">Dojos and Ninjas</a> <br/>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask_mysql/crud/Login_And_Registration">Login and Registration</a> <br/>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask_mysql/crud/Users_CR">Users_CR</a> <br/>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask_mysql/crud/burgers">Burgers</a> <br/>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask_mysql/validation">Bcrypt Practice</a> <br/>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/fundamentals/introduction/basics/BankAccounts">Bank Accounts</a> <br/>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/fundamentals/introduction/basics/Users_with_Bank_Accounts">Users With Bank Accounts</a> <br/>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/fundamentals/introduction/bots">Bots</a> <br/>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/blob/master/fundamentals/oop/Chaining_Prac/Christopher_Ivy_Chaining_assignment.py">Chaining Assignment</a> <br/>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python">All Of My Python Experience</a>
+                    <ul>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask/flask_projects/Dojo%20Survey">Dojo Survey</a>
+                        </li>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask/flask_projects/PLayground">Playground Assignment</a>
+                        </li>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask/flask_projects/W3L3_form">Creating a Form</a>
+                        </li>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask/flask_projects/html%20table">Creating a Table with Flask</a>
+                        </li>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask/flask_projects/project_counter">Counter Assignment</a>
+                        </li>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask/fundamentals/hello_flask">Hello Flask</a>
+                        </li>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask_mysql/crud/Books">Books Assignment</a>
+                        </li>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask_mysql/crud/Coding%20Dojo%20Wall">Dojo Wall</a>
+                        </li>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask_mysql/crud/Cookie_Orders">Cookie Orders</a>
+                        </li>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask_mysql/crud/Dojos_and_Ninjas">Dojos and Ninjas</a> 
+                        </li>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask_mysql/crud/Login_And_Registration">Login and Registration</a> 
+                        </li>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask_mysql/crud/Users_CR">Users_CR</a>
+                        </li>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask_mysql/crud/burgers">Burgers</a>
+                        </li>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/flask_mysql/validation">Bcrypt Practice</a>
+                        </li>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/fundamentals/introduction/basics/BankAccounts">Bank Accounts</a>
+                        </li>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/fundamentals/introduction/basics/Users_with_Bank_Accounts">Users With Bank Accounts</a>
+                        </li>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/tree/master/fundamentals/introduction/bots">Bots</a>
+                        </li>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python/blob/master/fundamentals/oop/Chaining_Prac/Christopher_Ivy_Chaining_assignment.py">Chaining Assignment</a>
+                        </li>
+                        <li>
+                            <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://github.com/IVY-CHRISTOPHER/python">All Of My Python Experience</a>
+                        </li>
+                    </ul>
                 </div>
 
                 <div className="Mern" id="Mern">
