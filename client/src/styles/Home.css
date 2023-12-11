@@ -1,140 +1,107 @@
-html{scroll-behavior:smooth}
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 1000px) {
+    html{
+        margin-top: 5rem;
+    }
+    .container{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .mern {
+        font-size: small;
+    }
+}
+
+html {
+    display: flex;
+}
 
 .container {
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
-.welcome {
+.welcome{
     text-align: center;
-    margin: 0 auto;
-    margin-top: 1rem;
-    width: 50%;
 }
 
-div h1 {
-text-align: center;
-align-items: center;
-}
-
-.info {
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 3rem;
+.info{
     text-align: center;
-    font-size: 30px;
-    line-height: 60px;
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+    line-height: 2rem;
 }
 
-.info a {
-    text-decoration: none;
-}
-
-.info img {
-    margin-bottom: 3rem;
-}
-
-.About{
-    text-align: center;
-    line-height: 50px;
-    font-size: large;
-    background-color: rgb(166, 162, 162);
-    border: black solid 1px;
-}
-
-.Projects {
+.projects{
     text-align: center;
     line-height: 50px;
 }
 
-.Projects p {
-    width: 50%;
+.myProjects{
+    background-color: rgb(165, 163, 163);
+    border: solid black 2px;
     margin-left: auto;
     margin-right: auto;
-    line-height: normal;
-    margin-bottom: 100px;
-    font-size: large;
+    width: auto;
 }
 
-hr {
-    margin-top: 10px;
-    margin-bottom: 15px;
+.java a{
+    text-decoration: none;
+    color: black;
 }
 
-.Certifications {
-    background-color: rgb(166, 162, 162);
-    border: black solid 1px;
-    padding: 5px;
+.python{
+    background-color: rgb(165, 163, 163);
+    border: solid black 2px;
 }
 
-.Certifications img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
-    margin-top: 15px;
-    
+.python a{
+    text-decoration: none;
+    color: black;
 }
 
-.Certifications a {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 15%;
-    margin-top: 15px;
+.mern a {
+    text-decoration: none;
+    color: black;
 }
 
-.CertificationsOnHover {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 15%;
-    padding: 5px;
-    margin-top: 15px;
-}
-
-.Contact {
+.about {
+    background-color: rgb(165, 163, 163);
+    border: solid black 2px;
     text-align: center;
-    line-height: 50px;
-    font-size: large;
+    line-height: 2rem;
+    padding: 2px;
 }
 
-.Contact a {
+.contact {
+    text-align: center;
+    line-height: 2rem;
+    padding: 2px;
+}
+
+.contact a {
     text-decoration: none;
     color: black;
 }
 
-.ProjectsOnHover {
-    padding: 5px;
-}
-
-.MyProjects {
-    background-color: rgb(166, 162, 162);
-    border: black solid 1px;
-}
-
-.Python {
-    background-color: rgb(166, 162, 162);
-    border: black solid 1px;
-}
-
-.Python a {
-    text-decoration: none;
-    font-size: large;
-    color: black;
-}
-
-.Mern a {
-    text-decoration: none;
-    font-size: large;
-    color: black;
-}
-
-.Java a {
-    text-decoration: none;
-    font-size: large;
-    color: black;
+.certifications {
+    text-align: center;
+    background-color: rgb(165, 163, 163);
+    border: solid black 2px;
+    padding: 2px;
 }
 
 #Github {
-    color: rgb(30, 136, 171);
+    color: #66c2ff;
 }

@@ -1,0 +1,86 @@
+/* NavBar.css */
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: -70%; /* Initial position off-screen */
+    width: 90%;
+    height: 100%;
+    overflow-x: hidden;
+    transition: 0.5s;
+    }
+
+    @media screen and (min-width: 350px) {
+        .nav-bar{
+            width: 85%;
+        }
+    }
+
+    @media screen and (min-width: 500px) {
+        .nav-bar{
+            width: 80.5%;
+        }
+    }
+
+    @media screen and (min-width: 700px) {
+        .nav-bar{
+            width: 77%;
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        .nav-bar{
+            width: 76%;
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        .nav-bar{
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            height: 10%;
+        }
+        .nav-content{
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+    }
+
+    .nav-bar.open {
+    left: 0;
+    background-color: #333;
+    }
+
+    .toggle-button {
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    margin-right: 25px;
+    float: right;
+    }
+
+    .nav-bar.open .toggle-button {
+        color: white;
+    }
+
+    .nav-content {
+    padding: 20px;
+    }
+
+    .nav-content a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+    width: fit-content;
+    }
+
+    .nav-content a:hover {
+    color: #66c2ff;
+    }
