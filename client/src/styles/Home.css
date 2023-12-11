@@ -20,6 +20,9 @@ html {
     .mern {
         font-size: small;
     }
+    ul {
+        list-style-type: none;
+    }
 }
 
 html {
