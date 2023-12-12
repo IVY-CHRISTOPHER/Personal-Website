@@ -28,9 +28,9 @@ const NavBar = () => {
         <div className="nav-content">
         {/* Your navigation links go here */}
         <a href="#Home">Home</a>
+        <a href="#Projects">Projects</a>
         <a href="#About">About</a>
         <a href="#Contact">Contact</a>
-        <a href="#Projects">Projects</a>
         <a href="#Certifications">Certifications</a>
         <a href="https://github.com/IVY-CHRISTOPHER">GitHub</a>
         </div>
