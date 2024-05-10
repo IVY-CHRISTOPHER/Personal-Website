@@ -21,7 +21,7 @@ const NavBar = () => {
 
     return (
         <>
-    <div className={`nav-bar ${isNavOpen ? "open" : ""}`}>
+        <div className={`nav-bar ${isNavOpen ? "open" : ""}`}>
             {!matches && (<button className="toggle-button" onClick={toggleNav}>
                 ☰
             </button>)}

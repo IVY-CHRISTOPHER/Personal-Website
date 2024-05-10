@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, {useState} from "react";
+import React, { useState } from "react";
 import wave from "../assets/wave.png"
 import Certificate from "../assets/Certificate.jpg"
 import ColorMaster from "../assets/Projects/Javascript/ColorMasters.jpg"
