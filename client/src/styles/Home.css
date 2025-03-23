@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    display: flex;
 }
 
 * {
@@ -25,8 +26,8 @@ html {
     }
 }
 
-html {
-    display: flex;
+li {
+    color: transparent;
 }
 
 .container {
