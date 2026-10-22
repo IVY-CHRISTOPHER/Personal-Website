@@ -1,34 +1,43 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, { useState } from "react";
 import wave from "../assets/wave.png"
 import Certificate from "../assets/Certificate.jpg"
 import ColorMaster from "../assets/Projects/Javascript/ColorMasters.jpg"
 import Selfi from "../assets/Selfi.jpg"
+import ContactForm from "./ContactForm"
 import "../styles/Home.css"
 
 const Home = () => {
 
     return (
-        <div>
+        <main className="home-page">
             <div className="container">
-                <h1 className="welcome" id="Home">Full-Stack Web Dev / Aspiring Game Dev</h1>
-                <div className="info">
-                    <img style={{width: "25%", borderRadius: "50%", border: "solid black"}} src={Selfi} alt="Headshot" />
-                    <div>
-                        <h1>Hi! <img src={wave} alt="Wave" style={{width: "10%", marginBottom: "1px"}}/></h1> 
+                <section className="hero" id="Home">
+                    <div className="hero-content">
+                        <div className="hero-copy">
+                            <p className="eyebrow">Portfolio <span>·</span> Springdale, Arkansas</p>
+                            <h1>Building for the web.<br /><span>Dreaming beyond it.</span></h1>
+                            <p className="hero-description">I'm Chris Ivy, a full-stack developer and aspiring game developer who loves turning curious ideas into useful, thoughtful experiences.</p>
+                            <div className="hero-actions">
+                                <a className="button button-primary" href="#Projects">Explore my work <span aria-hidden="true">↘</span></a>
+                                <a className="button button-text" href="#Contact">Get in touch <span aria-hidden="true">↗</span></a>
+                            </div>
+                            <p className="hero-skills">JAVA <span>/</span> PYTHON <span>/</span> MERN <span>/</span> C#</p>
+                        </div>
+                        <div className="hero-portrait-wrap">
+                            <div className="portrait-accent" aria-hidden="true">CHRIS<br />IVY</div>
+                            <img className="hero-portrait" src={Selfi} alt="Portrait of Chris Ivy" />
+                            <div className="portrait-note"><img src={wave} alt="" /> Nice to meet you</div>
+                        </div>
                     </div>
-                    <p>
-                        Im <strong>Chris</strong>, Full-Stack Web Dev, Aspiring C# game dev, Animal Lover, Hard Worker, and Late night Coffee Sipper!
-                        Basically I'm the perfect candidate for your role! </p>
-
-                    <p>A few key web development languages in which I am proficient include <strong><a href="#Java" style={{ color: "Red" }}>Java</a></strong>, <strong><a href="#Python" style={{ color: "#c29115" }}>Python</a></strong>, 
-                        and <strong><a href="#Mern" style={{ color: "blue" }}>MERN</a></strong>. 
-                        Additionally, I am familiar with concepts such as <strong>React</strong>, <strong>Flask</strong>, and <strong>Node</strong>.
-                    </p>
-                </div>
+                    <a className="hero-scroll" href="#Projects">Scroll to explore <span aria-hidden="true">↓</span></a>
+                </section>
                 <hr/>
-                <div  className="projects" id="Projects">
-                    <h1 className="myProjects">My Projects</h1>
+                <section className="projects" id="Projects">
+                    <div className="section-heading">
+                        <p className="eyebrow">Selected experience</p>
+                        <h2 className="myProjects">A little of what I make<span>.</span></h2>
+                        <p className="section-intro">From full-stack experiments to the foundations that got me here.</p>
+                    </div>
                     <div className="java" id="Java">
                         <h2>Java - Not Deployed</h2>
                         <h3>GitHub Links</h3>
@@ -124,7 +133,7 @@ const Home = () => {
                             </li>
                         </ul>
                     </div>
-                </div>
+                </section>
                 <div id="About" className="about">
                     <h1>All About Me! (Chris)</h1>
                     <p>
@@ -138,10 +147,15 @@ const Home = () => {
                 </div>
                 <div className="contact" id="Contact">
                     <h1>Contact Me</h1>
-                    <h2>Email</h2>
-                    <p>chrisivy22703@gmail.com</p>
-                    <h2>LinkedIn</h2>
-                    <a onMouseOver={(e) => {e.target.id="Github"}} onMouseOut={(e) => {e.target.id=""}} href="https://www.linkedin.com/in/christopher-ivy-dev/">Christopher Ivy</a>
+                    <div className="contact-copy">
+                        <p className="eyebrow">Have a project in mind?</p>
+                        <p>Share a few details and I will get back to you as soon as I can.</p>
+                        <h2>Email</h2>
+                        <a href="mailto:chrisivy22703@gmail.com">Chris@ivyssoftware.com</a>
+                        <h2>LinkedIn</h2>
+                        <a href="https://www.linkedin.com/in/christopher-ivy-dev/" target="_blank" rel="noreferrer">Christopher Ivy <span aria-hidden="true">↗</span></a>
+                    </div>
+                    <ContactForm />
                 </div>
                 <div className="certifications" id="Certifications">
                     <h1>Coding Dojo Certificate</h1>
@@ -151,7 +165,7 @@ const Home = () => {
                     <a href="https://www.flaticon.com/free-icons/hello" title="hello icons">Hello icons created by Kalashnyk - Flaticon</a>
                 </div>
             </div>
-        </div>
+        </main>
         
     )
 }

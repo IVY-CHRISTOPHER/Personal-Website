@@ -1,6 +1,32 @@
 
-html {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(216, 215, 215);
+:root {
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    color: #172d27;
+    background: #f3f5f1;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    scroll-behavior: smooth;
+    --ink: #172d27;
+    --muted: #64736d;
+    --paper: #f3f5f1;
+    --white: #ffffff;
+    --lime: #d9f36a;
+    --coral: #ed775f;
+    --line: #dce3dc;
 }
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    min-width: 320px;
+    background: var(--paper);
+}
+
+button, a { font: inherit; }
+a { color: inherit; }
+::selection { color: var(--ink); background: var(--lime); }

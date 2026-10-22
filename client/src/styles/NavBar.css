@@ -1,86 +1,27 @@
-/* NavBar.css */
-.nav-bar {
-    position: fixed;
-    top: 0;
-    left: -70%; /* Initial position off-screen */
-    width: 90%;
-    height: 100%;
-    overflow-x: hidden;
-    transition: 0.5s;
-    }
+.nav-bar { position: absolute; z-index: 10; top: 0; left: 0; width: 100%; color: #f6f7f2; }
+.nav-content { display: flex; width: min(100% - 3rem, 1120px); min-height: 82px; align-items: center; justify-content: space-between; margin: auto; }
+.nav-content a { color: inherit; text-decoration: none; }
+.nav-brand { font-size: 1.2rem; font-weight: 800; letter-spacing: -.08em; }
+.nav-brand span { color: #d9f36a; }
+.nav-links { display: flex; align-items: center; gap: 2rem; }
+.nav-links a, .nav-github { color: #d7dfda !important; font-size: .78rem; font-weight: 700; transition: color .2s ease; }
+.nav-links a:hover, .nav-github:hover { color: #d9f36a !important; }
+.nav-github { display: inline-flex; align-items: center; gap: .6rem; padding: .7rem .9rem; border: 1px solid rgb(255 255 255 / 27%); }
+.toggle-button { display: none; }
 
-    @media screen and (min-width: 350px) {
-        .nav-bar{
-            width: 85%;
-        }
-    }
+@media (max-width: 899px) {
+    .nav-bar { position: absolute; }
+    .nav-content { width: 100%; min-height: 0; flex-wrap: wrap; justify-content: flex-start; padding: 1.2rem 1.25rem; }
+    .nav-brand { position: relative; z-index: 2; }
+    .toggle-button { position: absolute; z-index: 3; top: 1rem; right: 1rem; display: grid; width: 42px; height: 42px; place-items: center; border: 1px solid rgb(255 255 255 / 32%); color: white; background: transparent; font-size: 1.3rem; cursor: pointer; }
+    .nav-links { position: absolute; top: 0; right: 0; left: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 1.5rem; padding: 5.5rem 1.5rem 1.5rem; background: #172d27; opacity: 0; visibility: hidden; transform: translateY(-8px); transition: opacity .2s ease, transform .2s ease, visibility .2s ease; }
+    .nav-bar.open .nav-links { opacity: 1; visibility: visible; transform: translateY(0); }
+    .nav-links a { font-size: 1rem; }
+    .nav-github { margin-left: auto; margin-right: 3.4rem; padding: .55rem .7rem; font-size: .72rem !important; }
+    .nav-bar.open .nav-github { position: relative; z-index: 2; }
+}
 
-    @media screen and (min-width: 500px) {
-        .nav-bar{
-            width: 80.5%;
-        }
-    }
-
-    @media screen and (min-width: 700px) {
-        .nav-bar{
-            width: 77%;
-        }
-    }
-
-    @media screen and (min-width: 900px) {
-        .nav-bar{
-            width: 76%;
-        }
-    }
-
-    @media screen and (min-width: 1000px) {
-        .nav-bar{
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: #333;
-            height: 10%;
-        }
-        .nav-content{
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-    }
-
-    .nav-bar.open {
-    left: 0;
-    background-color: #333;
-    }
-
-    .toggle-button {
-    font-size: 20px;
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: rgb(0, 0, 0);
-    margin-right: 25px;
-    float: right;
-    }
-
-    .nav-bar.open .toggle-button {
-        color: white;
-    }
-
-    .nav-content {
-    padding: 20px;
-    }
-
-    .nav-content a {
-    display: flex;
-    color: white;
-    text-decoration: none;
-    margin-bottom: 10px;
-    font-size: 18px;
-    width: fit-content;
-    }
-
-    .nav-content a:hover {
-    color: #66c2ff;
-    }
+@media (max-width: 380px) {
+    .nav-content { padding-inline: 1rem; }
+    .nav-github { margin-right: 3.2rem; }
+}

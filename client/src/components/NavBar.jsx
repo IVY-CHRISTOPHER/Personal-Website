@@ -1,41 +1,38 @@
 // NavBar.js
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "../styles/NavBar.css";
 
 const NavBar = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
 
-    const toggleNav = () => {
-    setIsNavOpen(!isNavOpen);
-    };
-
-    const [matches, setMatches] = useState(
-        window.matchMedia("(min-width: 1000px)").matches
-        )
+    const [matches, setMatches] = useState(window.matchMedia("(min-width: 900px)").matches);
     
     useEffect(() => {
-        window
-        .matchMedia("(min-width: 1000px)")
-        .addEventListener('change', e => setMatches( e.matches ));
-        }, []);
+        const mediaQuery = window.matchMedia("(min-width: 900px)");
+        const handleChange = (event) => {
+            setMatches(event.matches);
+            setIsNavOpen(false);
+        };
+        mediaQuery.addEventListener("change", handleChange);
+        return () => mediaQuery.removeEventListener("change", handleChange);
+    }, []);
 
     return (
-        <>
-        <div className={`nav-bar ${isNavOpen ? "open" : ""}`}>
-            {!matches && (<button className="toggle-button" onClick={toggleNav}>
-                ☰
+        <header className={`nav-bar ${isNavOpen ? "open" : ""}`}>
+            {!matches && (<button className="toggle-button" onClick={() => setIsNavOpen(!isNavOpen)} aria-expanded={isNavOpen} aria-controls="primary-navigation" aria-label={isNavOpen ? "Close navigation" : "Open navigation"}>
+                <span aria-hidden="true">{isNavOpen ? "×" : "☰"}</span>
             </button>)}
-        <div className="nav-content">
-        {/* Your navigation links go here */}
-        <a href="#Home">Home</a>
-        <a href="#Projects">Projects</a>
-        <a href="#About">About</a>
-        <a href="#Contact">Contact</a>
-        <a href="#Certifications">Certifications</a>
-        <a href="https://github.com/IVY-CHRISTOPHER">GitHub</a>
-        </div>
-    </div>
-    </>
+        <nav className="nav-content" id="primary-navigation" aria-label="Main navigation">
+            <a className="nav-brand" href="#Home" onClick={() => setIsNavOpen(false)}>CI<span>.</span></a>
+            <div className="nav-links">
+                <a href="#Projects" onClick={() => setIsNavOpen(false)}>Work</a>
+                <a href="#About" onClick={() => setIsNavOpen(false)}>About</a>
+                <a href="#Contact" onClick={() => setIsNavOpen(false)}>Contact</a>
+                <a href="#Certifications" onClick={() => setIsNavOpen(false)}>Certificate</a>
+            </div>
+            <a className="nav-github" href="https://github.com/IVY-CHRISTOPHER" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </nav>
+        </header>
     );
 };
 
