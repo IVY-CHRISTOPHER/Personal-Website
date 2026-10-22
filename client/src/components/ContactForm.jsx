@@ -36,8 +36,16 @@ const ContactForm = () => {
 
             form.reset();
             setSubmission({ state: "success", message: "Thanks for reaching out. Your message has been sent." });
-        } catch {
-            setSubmission({ state: "error", message: "Your message could not be sent. Please try again or email Chris directly." });
+        } catch (error) {
+            const detail = error?.text || error?.message;
+            const status = error?.status ? ` (${error.status})` : "";
+            console.error("EmailJS contact form request failed", { status: error?.status, detail });
+            setSubmission({
+                state: "error",
+                message: detail
+                    ? `Email service error${status}: ${detail}`
+                    : "Your message could not be sent. Please try again or email Chris directly.",
+            });
         }
     };
 
