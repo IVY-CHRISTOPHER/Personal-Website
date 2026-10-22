@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+const recipientEmail = import.meta.env.VITE_EMAILJS_RECIPIENT_EMAIL || "chrisivy22703@gmail.com";
 const isConfigured = Boolean(serviceId && templateId && publicKey);
 
 const ContactForm = () => {
@@ -29,6 +30,7 @@ const ContactForm = () => {
 
         try {
             await emailjs.send(serviceId, templateId, {
+                to_email: recipientEmail,
                 from_name: formData.get("name"),
                 reply_to: formData.get("email"),
                 message: formData.get("message"),
