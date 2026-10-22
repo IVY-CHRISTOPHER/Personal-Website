@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-const recipientEmail = import.meta.env.VITE_EMAILJS_RECIPIENT_EMAIL || "chrisivy22703@gmail.com";
+const recipientEmail = import.meta.env.VITE_EMAILJS_RECIPIENT_EMAIL;
 const isConfigured = Boolean(serviceId && templateId && publicKey);
 
 const ContactForm = () => {
