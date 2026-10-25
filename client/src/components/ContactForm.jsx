@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 
 const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const autoReplyTemplateId = import.meta.env.VITE_EMAILJS_AUTOREPLY_TEMPLATE_ID;
 const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 const recipientEmail = import.meta.env.VITE_EMAILJS_RECIPIENT_EMAIL;
 const isConfigured = Boolean(serviceId && templateId && publicKey);
@@ -27,17 +28,30 @@ const ContactForm = () => {
         }
 
         setSubmission({ state: "sending", message: "Sending your message..." });
-
+//Business Email
         try {
-            await emailjs.send(serviceId, templateId, {
+            await emailjs.send(serviceId, autoReplyTemplateId, {
                 to_email: recipientEmail,
                 from_name: formData.get("name"),
                 reply_to: formData.get("email"),
                 message: formData.get("message"),
             }, { publicKey });
+//Customer Reply
+            if (autoReplyTemplateId) {
+                // Best effort: a failed auto-reply must not mark the submission as failed
+                try {
+                    await emailjs.send(serviceId, templateId, {
+                        to_email: formData.get("email"),
+                        to_name: formData.get("name"),
+                        message: formData.get("message"),
+                    }, { publicKey });
+                } catch (autoReplyError) {
+                    console.error("EmailJS auto-reply failed", autoReplyError);
+                }
+            }
 
             form.reset();
-            setSubmission({ state: "success", message: "Thanks for reaching out. Your message has been sent." });
+            setSubmission({ state: "success", message: "Thanks for reaching out. Your message has been sent."});
         } catch (error) {
             const detail = error?.text || error?.message;
             const status = error?.status ? ` (${error.status})` : "";
